@@ -1,22 +1,38 @@
+# Core Flask dependencies
 Flask==2.3.3
 Flask-CORS==4.0.0
-SpeechRecognition==3.10.0
-pydub==0.25.1
 Werkzeug==2.3.7
-requests==2.31.0
-numpy==1.24.3
-
-# Optional dependencies for enhanced functionality
-# Install with: pip install -r requirements.txt
-
-# For better audio processing
-librosa==0.10.1
-soundfile==0.12.1
-
-# For production deployment
-gunicorn==21.2.0
 python-dotenv==1.0.0
 
-# For advanced audio analysis
+# Audio processing
+SpeechRecognition==3.10.0
+pydub==0.25.1
+librosa==0.10.1
+soundfile==0.12.1
 webrtcvad==2.0.10
+
+# Scientific computing
+numpy==1.24.3
 scipy==1.11.3
+
+# HTTP requests (for callbacks)
+requests==2.31.0
+
+# System monitoring
+psutil==5.9.5
+
+# Production server
+gunicorn==21.2.0
+
+# Audio conversion support (system dependencies needed)
+# FFmpeg required for video/audio conversion
+# Install system dependencies:
+# Ubuntu/Debian: sudo apt-get install ffmpeg
+# macOS: brew install ffmpeg  
+# Windows: Download from https://ffmpeg.org/
+
+# Development dependencies (create requirements-dev.txt)
+# pytest==7.4.2
+# pytest-flask==1.2.0
+# black==23.7.0
+# flake8==6.1.0
