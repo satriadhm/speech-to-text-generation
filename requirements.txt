@@ -1,0 +1,22 @@
+Flask==2.3.3
+Flask-CORS==4.0.0
+SpeechRecognition==3.10.0
+pydub==0.25.1
+Werkzeug==2.3.7
+requests==2.31.0
+numpy==1.24.3
+
+# Optional dependencies for enhanced functionality
+# Install with: pip install -r requirements.txt
+
+# For better audio processing
+librosa==0.10.1
+soundfile==0.12.1
+
+# For production deployment
+gunicorn==21.2.0
+python-dotenv==1.0.0
+
+# For advanced audio analysis
+webrtcvad==2.0.10
+scipy==1.11.3
